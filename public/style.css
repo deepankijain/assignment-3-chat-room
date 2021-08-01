@@ -1,0 +1,112 @@
+body {
+  margin: 0%;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+main div {
+  width: 100%;
+}
+form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3rem;
+  margin-top: 3rem;
+  width: calc(100% - 250px);
+  margin-left: auto;
+  box-sizing: border-box;
+}
+form > input {
+  width: 100%;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #aaa;
+}
+button {
+  border-radius: 0 6px 6px 0;
+  outline: none;
+  border: 1px solid #aaa;
+  padding: 18px;
+  text-transform: uppercase;
+}
+#messages-wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+#messages {
+  list-style: none;
+  display: flex;
+  margin: 0%;
+  flex-direction: column;
+  padding: 0%;
+  padding-left: 1px;
+}
+.my-message {
+  width: fit-content;
+  margin-left: auto;
+}
+.message-list-item {
+  width: fit-content;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  border-bottom: 1px solid aquamarine;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+.message-list-item:last-child {
+  margin-bottom: 3rem;
+}
+.user-joined {
+  background: #fbfffb;
+  width: 100%;
+  /* padding: 12px; */
+  box-sizing: border-box;
+  color: green;
+  text-transform: uppercase;
+  border-bottom: 1px solid green;
+}
+.user-left {
+  background: rgb(252, 225, 225);
+  width: 100%;
+  /* padding: 12px; */
+  color: red;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-bottom: 1px solid red;
+}
+#connected-users-wrapper {
+  border-right: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#connected-users-wrapper h3 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#connected-users {
+  list-style: none;
+  margin: 4px 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+#connected-users li {
+  width: 50%;
+  border-bottom: 1px solid #aaa;
+  padding: 8px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 20px;
+}
+#connected-users li:last-child {
+  border: none;
+}
